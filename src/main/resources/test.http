@@ -1,0 +1,76 @@
+POST http://localhost:3051/api/card/due/8600740164224907
+Content-Type: application/json
+Authorization: Bearer {{director}}
+
+{
+  "due": "2050-12-15"
+}
+
+###
+PATCH http://localhost:3051/api/card/password/8600418076439349
+Authorization: Bearer {{director}}
+Content-Type: application/json
+
+{
+  "password": "123"
+}
+###
+POST http://localhost:3051/api/card/block/8600368370229820
+Content-Type: application/json
+Authorization: Bearer {{director}}
+
+###
+POST http://localhost:3051/api/card/unblock/8600368370229820
+Content-Type: application/json
+Authorization: Bearer {{director}}
+
+###
+POST http://localhost:3051/api/card
+Content-Type: application/json
+Authorization: Bearer {{director}}
+
+{
+  "first_name": "Umidjon",
+  "last_name": "Tojiboyev",
+  "amount": 0,
+  "password": "1234"
+}
+
+###
+POST http://localhost:3051/api/bankomat
+Content-Type: application/json
+Authorization: Bearer {{director}}
+
+{
+  "address": "Mirobod 3-tor 4",
+  "responsibleUser": 2,
+  "maxTranValue": 10000000.00,
+  "commissionForBankCard": 1,
+  "commissionOtherCard": 5,
+  "minNotificationValue": 50000,
+  "cash": {
+    "one_dollar": 10,
+    "five_dollar": 20,
+    "hundred_dollar": 100
+  }
+}
+
+###
+POST http://localhost:3051/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "director@gmail.com",
+  "password": "1234"
+}
+
+###
+POST http://localhost:3051/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "tumidjon808@gmail.com",
+  "password": "1234"
+}
+
+###

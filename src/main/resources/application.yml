@@ -1,0 +1,26 @@
+debug: true
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bankomat
+    driver-class-name: org.postgresql.Driver
+    password: 911368169umid
+    username: postgres
+  sql:
+    init:
+      mode: NEVER
+  mvc:
+    servlet:
+      path: /api
+server:
+  port: 3051
+jwt:
+  key: 132ea09c203531f15e3d055a4e305eda
+  expire: 86400000
+company:
+  domain: http://localhost:3051/
+  email:
+    address: umidjoncorp@outlook.com
+    password: 911368169umid

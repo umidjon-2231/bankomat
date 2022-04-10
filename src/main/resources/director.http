@@ -1,0 +1,14 @@
+GET http://localhost:3051/api/bankomat/1/money
+Accept: application/json
+Authorization: Bearer {{director}}
+
+###
+GET http://localhost:3051/api/operation/replenish/1
+Accept: application/json
+Authorization: Bearer {{director}}
+
+###
+GET http://localhost:3051/api/operation/input/1/today
+Accept: application/json
+
+###

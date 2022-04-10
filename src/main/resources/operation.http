@@ -1,0 +1,42 @@
+POST http://localhost:3051/api/operation/replenish/1
+Content-Type: application/json
+Authorization: Bearer {{manager}}
+
+{
+  "cash": {
+    "one_dollar": 1
+  }
+}
+
+###
+POST http://localhost:3051/api/operation/output/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NDk2MTc0MTIsImV4cCI6MTY0OTYxOTIxMiwic3ViIjoie1wibnVtYmVyXCI6ODYwMDc0MDE2NDIyNDkwNyxcInBhc3N3b3JkXCI6XCIxMjM0XCIsXCJiYW5rb21hdFwiOjF9In0.o_y6yZIWATx3Bh-xpXgOQlbAOerRYdyC77cCPjzde7yWlWRUfJf204R6eiOGujHs7ZWWs5ZgHlhbzhc_Zj3E7Q
+
+
+{
+  "amount": 10
+}
+
+###
+POST http://localhost:3051/api/operation/input/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NDk2MTc0MTIsImV4cCI6MTY0OTYxOTIxMiwic3ViIjoie1wibnVtYmVyXCI6ODYwMDc0MDE2NDIyNDkwNyxcInBhc3N3b3JkXCI6XCIxMjM0XCIsXCJiYW5rb21hdFwiOjF9In0.o_y6yZIWATx3Bh-xpXgOQlbAOerRYdyC77cCPjzde7yWlWRUfJf204R6eiOGujHs7ZWWs5ZgHlhbzhc_Zj3E7Q
+
+{
+  "cash": {
+    "hundred_dollar": 1
+  }
+}
+
+###
+POST http://localhost:3051/api/operation/check
+Content-Type: application/json
+
+{
+  "number": 8600740164224907,
+  "bankomat": 1,
+  "password": "1234"
+}
+
+###
